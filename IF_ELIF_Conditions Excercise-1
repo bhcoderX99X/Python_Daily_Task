@@ -1,0 +1,75 @@
+# Question 1. Electricity Bill
+
+unit=int(input("Enter NO. of unit:"))
+surcharge_bill=0
+if(unit>0 and unit<=100):
+    bill=unit*5
+    print("Your Electricity Bill is :",bill)
+elif(unit>100 and unit<=200):
+    bill=unit*7
+    print("Your Electricity Bill is :",bill)
+elif(unit>200 and unit<=300):
+    bill=unit*10
+    print("Your Electricity Bill is :",bill)
+elif(unit>300):
+    bill=unit*15
+    s_bill=bill*10/100
+    bill+=s_bill
+    print("Your Electricity Bill is :",bill)
+    print("Your Surcharged Amount is :",s_bill)
+    print("Your Electricity Bill after charges is :",bill
+
+
+# Question 2. Employee Bonus
+
+exp=int(input("Enter Your Experience:"))
+if(exp>=1):
+    salary=int(input("Enter Your Salary:"))
+    per=int(input("Enter Your Performance Score:"))
+    if(salary>=50000):
+        if(per>=90):
+            bonus=salary*20/100
+            salary+=bonus
+            print("Your Bonus is (20%) :",bonus)
+            print("Your Salary after Bonus:",salary)
+        elif(per>=75):
+            bonus=salary*10/100
+            salary+=bonus
+            print("Your Bonus is (10) :",bonus)
+            print("Your Salary after Bonus:",salary)
+        else:
+            bonus=salary*5/100
+            salary+=bonus
+            print("Your Bonus is (5%) :",bonus)
+            print("Your Salary after Bonus:",salary)
+    else:
+        if salary<50000:
+            if per>=90:
+                bonus=salary*15/100
+                salary+=bonus
+                print("Your Bonus is (15%):",bonus)
+                print("Your Salary after Bonus:",salary)
+            else:
+                bonus=salary*5/100
+                salary+=bonus
+                print("Your Bonus is (5%) :",bonus)
+                print("Your Salary after Bonus:",salary)
+else:
+    print("Experience is Zero")
+
+
+
+
+# Question 3. Driving License
+
+age=int(input("Enter Your Age :"))
+if age>=18:
+    t_score=int(input("Enter Your Driving Test Score :"))
+    if t_score>=60:
+        print("Driving License Available ")
+    else:
+        print("Learner License Available")
+else:
+    print("Under Age")
+              
+    
